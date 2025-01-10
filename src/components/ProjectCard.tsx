@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   title: string;
@@ -10,13 +11,14 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, link }) => {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden">
-      {image && (
-        <img
-          src={image}
+        <Image
+          src={image || '/default-image.jpeg'}
           alt={`${title} preview`}
-          className="w-full h-40 object-cover"
+          width={500}
+          height={160}
+          className="object-cover"
         />
-      )}
+      )
       <div className="p-4">
         <h2 className="text-xl font-semibold mb-2">{title}</h2>
         <p className="text-gray-600 mb-4">{description}</p>
@@ -34,3 +36,5 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, li
 };
 
 export default ProjectCard;
+
+
