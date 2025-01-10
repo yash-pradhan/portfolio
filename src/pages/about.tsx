@@ -15,7 +15,7 @@ const About = () => (
                     I specialize in full-stack development and have experience working with modern frameworks like React, Next.js, and Node.js.
                 </p>
                 <p>
-                    Outside of coding, I enjoy [your hobbies or personal interests].
+                    Outside of coding, I enjoy [your hobbies or personal interests]
                 </p>
             </div>
         </main>
