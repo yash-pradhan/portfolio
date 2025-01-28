@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, li
           width={500}
           height={160}
           className="object-cover"
-        />
+        /> 
       )
       <div className="p-4">
         <h2 className="text-xl font-semibold mb-2">{title}</h2>
